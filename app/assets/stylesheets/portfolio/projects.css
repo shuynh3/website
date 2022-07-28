@@ -1,0 +1,139 @@
+.project-section {
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px #e6e7e8, -1px -1px 5px #e6e7e8;
+}
+
+.project-info {
+    height: 100%;
+    padding: 1rem;
+}
+
+.project-title {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.project-desc {
+    font-size: .75rem;
+}
+
+.project-image-container {
+    position: relative;
+}
+
+.prev-image-button, .next-image-button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 35%;
+    cursor: pointer;
+}
+
+.prev-image-button {
+    left: 0;
+}
+
+.prev-image-button:hover {
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(225,225,225,1));
+}
+
+.next-image-button {
+    right: 0;
+}
+
+.next-image-button:hover {
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(225,225,225,1));
+}
+
+.image-button-container {
+
+}
+
+.prev-image-button i, .next-image-button i {
+    top: 50%;
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(0%, -50%);
+    color: var(--primary-color);
+}
+
+.prev-image-button i {
+    left: 10%;
+}
+
+.next-image-button i {
+    right: 10%;
+}
+
+.project-image, .project-image-centered {
+    height: 14rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    box-shadow: inset 0px -1px 5px #e6e7e8;
+}
+
+.project-tech-stack-image {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 0.75rem;
+    transition: all .05s ease-in-out;
+}
+
+.project-tech-stack-image:hover {
+    transform: scale(1.2);
+}
+
+.project-image-centered {
+    background-position: 50% 50%;
+}
+
+.project-link {
+    color: black;
+}
+
+.project-link:hover {
+    color: var(--primary-color);
+}
+
+.project-icon {
+    font-size: 1.5rem;
+    transition: all .05s ease-in-out;
+}
+
+.project-icon:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 576px) {
+    .project-image, .project-image-centered {
+        height: 15rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .project-image, .project-image-centered {
+        height: 17rem;
+    }
+    .project-section {
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) {
+    .project-image, .project-image-centered {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .project-section {
+        width: 45%;
+    }
+}
