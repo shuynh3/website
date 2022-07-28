@@ -38,7 +38,7 @@
     cursor: pointer;
     height: 1.5rem;
     width: 8rem;
-    background-image: url("/images/sonnyhuynh.png");
+    background-image: url("sonnyhuynh.png");
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate(0%, 5%);
