@@ -8,16 +8,16 @@
   </div>
   <div class='hidden md:flex flex-wrap justify-evenly mt-4'>
     <%= render(Tech::LanguagesComponent.new) %>
-<!--    <vc:techtesting />-->
-<!--    <vc:techinfrastructure />-->
-<!--    <vc:techtracking />-->
-<!--    <vc:techweb />-->
+    <%= render(Tech::TestingComponent.new) %>
+    <%#= render(Tech::InfrastructureComponent.new) %>
+    <%#= render(Tech::TrackingComponent.new) %>
+    <%#= render(Tech::WebComponent.new) %>
   </div>
   <div class='flex flex-col md:hidden mt-4'>
-<!--    <vc:techlanguages mobile=true />-->
-<!--    <vc:techtesting mobile=true />-->
-<!--    <vc:techinfrastructure mobile=true />-->
-<!--    <vc:techtracking mobile=true />-->
-<!--    <vc:techweb mobile=true />-->
+    <%= render(Tech::LanguagesMobileComponent.new) %>
+    <%#= render(Tech::TestingMobileComponent.new) %>
+    <%#= render(Tech::InfrastructureMobileComponent.new) %>
+    <%#= render(Tech::TrackingMobileComponent.new) %>
+    <%#= render(Tech::WebMobileComponent.new) %>
   </div>
 </div>
