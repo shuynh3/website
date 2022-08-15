@@ -1,30 +1,30 @@
 <head>
-  <%= stylesheet_link_tag "portfolio/navbar", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag 'portfolio/navbar', 'data-turbo-track': 'reload' %>
 </head>
 
-<body onload="removeHash()"></body>
+<body onload='removeHash()'></body>
 
-<nav class="navbar bg-white border-bottom shadow flex" style="z-index: 99;">
-    <div class="home-image" onclick="navigateTo('/#Top')"></div>
-    <div class="flex">
-      <div class="navbar-link-container">
-        <button onclick="navigateTo('/#Top')">Home</button>
+<nav class='navbar bg-white border-bottom shadow flex' style='z-index: 99;'>
+    <div class='home-image' onclick='navigateTo("/#Top")'></div>
+    <div class='flex'>
+      <div class='navbar-link-container'>
+        <button onclick='navigateTo("/#Top")'>Home</button>
       </div>
-      <div class="navbar-link-container">
-        <button onclick="navigateTo('/#About')">About</button>
+      <div class='navbar-link-container'>
+        <button onclick='navigateTo("/#About")'>About</button>
       </div>
-      <div class="navbar-link-container">
-        <button onclick="navigateTo('/#Projects')">Projects</button>
+      <div class='navbar-link-container'>
+        <button onclick='navigateTo("/#Projects")'>Projects</button>
       </div>
-      <div class="navbar-link-container">
-        <button onclick="navigateTo('/Resume')">Resume</button>
+      <div class='navbar-link-container'>
+        <button onclick='navigateTo("/Resume")'>Resume</button>
       </div>
     </div>
 </nav>
 
 <script>
     function removeHash() {
-        history.pushState("", document.title, window.location.pathname + window.location.search);
+        history.pushState('', document.title, window.location.pathname + window.location.search);
     }
     function navigateTo(location) {
         window.location.href = location;

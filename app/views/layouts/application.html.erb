@@ -2,21 +2,21 @@
 <html>
   <head>
     <title>Website</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= favicon_link_tag asset_path('favicon.png') %>
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "portfolio/portfolio", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'tailwind', 'inter-font', 'data-turbo-track': 'reload' %>
+    <%= stylesheet_link_tag 'portfolio/portfolio', 'data-turbo-track': 'reload' %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <%= render NavbarComponent.new %>
-    <div class="d-flex justify-content-center">
-      <main id="Top" role="main">
+    <div class='d-flex justify-content-center'>
+      <main id='Top' role='main'>
         <%= yield %>
       </main>
     </div>
