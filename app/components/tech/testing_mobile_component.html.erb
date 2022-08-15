@@ -1,0 +1,13 @@
+<head>
+  <%= stylesheet_link_tag 'portfolio/tech', 'data-turbo-track': 'reload' %>
+</head>
+
+<div class='icon-section-mobile flex flex-col'>
+  <p class='icon-section-title self-center'> Testing </p>
+  <div class='flex flex-row flex-wrap justify-center'>
+    <a href='https://rspec.info/' target='_blank'><%= image_tag('rspec.png', class: 'icon', alt: 'Rspec') %></a>
+    <a href='https://docs.pytest.org/en/7.1.x/' target='_blank'><%= image_tag('pytest.png', class: 'icon', alt: 'Pytest') %></a>
+    <a href='https://site.mockito.org/' target='_blank'><%= image_tag('mockito.png', class: 'icon-wide', alt: 'Mockito') %></a>
+    <a href='https://github.com/moq/moq4' target='_blank'><%= image_tag('moq.png', class: 'icon', alt: 'Moq') %></a>
+  </div>
+</div>
