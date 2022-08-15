@@ -1,0 +1,17 @@
+<head>
+  <%= stylesheet_link_tag 'portfolio/tech', 'data-turbo-track': 'reload' %>
+</head>
+
+<div class='icon-section flex flex-col'>
+  <p class='icon-section-title self-center'> Tracking </p>
+  <div class='flex flex-col'>
+    <div class='flex flex-row self-center'>
+      <a style='margin-right: 4rem;' href='https://www.atlassian.com/software/opsgenie' target='_blank'><%= image_tag('opsgenie.png', class: 'icon', alt: 'OpsGenie') %></a>
+      <a href='https://docs.sentry.io/product/alerts/' target='_blank'><%= image_tag('sentry.png', class: 'icon', alt: 'Sentry') %></a>
+    </div>
+    <div class='flex flex-row self-center' style='margin-top: 4rem;'>
+      <a style='margin-right: 4rem;' href='https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview' target='_blank'><%= image_tag('appinsights.png', class: 'icon', alt: 'Application Insights') %></a>
+      <a href='https://aws.amazon.com/cloudwatch/' target='_blank'><%= image_tag('cloudwatch.png', class: 'icon', alt: 'CloudWatch') %></a>
+    </div>
+  </div>
+</div>
