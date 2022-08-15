@@ -1,0 +1,14 @@
+<head>
+  <%= stylesheet_link_tag 'portfolio/tech', 'data-turbo-track': 'reload' %>
+</head>
+
+<div class='icon-section-mobile flex flex-col'>
+  <p class='icon-section-title self-center'> Infrastructure </p>
+  <div class='flex flex-row flex-wrap justify-center'>
+    <a href='https://azure.microsoft.com/en-us/services/devops/' target='_blank'><%= image_tag('devops.png', class: 'icon', alt: 'Azure DevOps') %></a>
+    <a href='https://azure.microsoft.com/en-us/' target='_blank'><%= image_tag('azure.png', class: 'icon', alt: 'Azure') %></a>
+    <a href='https://www.pulumi.com/' target='_blank'><%= image_tag('pulumi.png', class: 'icon', alt: 'Pulumi') %></a>
+    <a href='https://aws.amazon.com/' target='_blank'><%= image_tag('aws.png', class: 'icon', alt: 'AWS') %></a>
+    <a href='https://github.com/' target='_blank'><%= image_tag('github.png', class: 'icon', alt: 'Github') %></a>
+  </div>
+</div>
