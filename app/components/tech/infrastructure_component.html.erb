@@ -1,0 +1,26 @@
+<head>
+  <%= stylesheet_link_tag 'portfolio/tech', 'data-turbo-track': 'reload' %>
+</head>
+
+<%#= image_tag('devops.png', class: 'icon', alt: 'Azure DevOps') %>
+<%#= image_tag('azure.png', class: 'icon', alt: 'Azure') %>
+<%#= image_tag('aws.png', class: 'icon', alt: 'AWS') %>
+<%#= image_tag('pulumi.png', class: 'icon', alt: 'Pulumi') %>
+<%#= image_tag('github.png', class: 'icon', alt: 'Github') %>
+
+<div class='icon-section flex flex-col'>
+  <p class='icon-section-title self-center'> Infrastructure </p>
+  <div class='flex flex-col'>
+    <div class='flex flex-row self-center'>
+      <a style='margin-right: 4rem;' href='https://azure.microsoft.com/en-us/services/devops/' target='_blank'><%= image_tag('devops.png', class: 'icon', alt: 'Azure DevOps') %></a>
+      <a href='https://azure.microsoft.com/en-us/' target='_blank'><%= image_tag('azure.png', class: 'icon', alt: 'Azure') %></a>
+    </div>
+    <div class='flex flex-row self-center' style='margin-top: 0.25rem;'>
+      <a href='https://aws.amazon.com/' target='_blank'><%= image_tag('aws.png', class: 'icon', alt: 'AWS') %></a>
+    </div>
+    <div class='flex flex-row self-center' style='margin-top: 0.25rem;'>
+      <a style='margin-right: 4rem;' href='https://www.pulumi.com/' target='_blank'><%= image_tag('pulumi.png', class: 'icon', alt: 'Pulumi') %></a>
+      <a href='https://github.com/' target='_blank'><%= image_tag('github.png', class: 'icon', alt: 'Github') %></a>
+    </div>
+  </div>
+</div>
